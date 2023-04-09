@@ -1,0 +1,188 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+/* CSS NAVBAR ET CARROUSSEL */
+
+.jumbotron {
+    background: rgb(0,4,110);
+    background: linear-gradient(45deg, rgba(0,4,110,1) 45%, rgba(136,0,255,1) 77%, rgba(255,252,0,1) 100%);
+    color: #fff;
+    width: auto;
+    font-family: Montserrat, sans-serif;
+    justify-content: center;
+}
+
+.center1{
+    justify-content: center;
+}
+
+.navbar {
+    height: 50px;
+    margin-bottom: 0;
+    background: rgb(0,4,110);
+    background: linear-gradient(162deg, rgba(0,4,110,1) 45%, rgba(136,0,255,1) 77%, rgba(255,252,0,1) 100%);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f6f6f6 !important;
+    text-decoration: underline #f6f6f6 2px;
+    transition: transform 0.5s ease;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+    justify-content: center;
+}
+
+.lockr {
+    justify-content: flex-end;
+    max-width: 150px;
+}
+
+/* FIN DU CSS NAVBAR ET CAROUSSEL */
+
+
+/* SECTION A PROPOS VALEUR ET SERVICE */
+
+.border-purple{
+    border: 5mm ridge #163282;
+    transition: 1s ease;
+}
+.border-yellow{
+    border: 5mm ridge #FFF201;
+    transition: 1s ease;
+}
+.border-pink{
+    border: 5mm ridge #EC008C;
+    transition: 1s ease;
+}
+
+.border-pink:hover,.border-yellow:hover,.border-purple:hover{
+    transform: scale(1.10);
+    background-color: #d4d4d493;
+}
+
+
+/* SECTION A PROPOS VALEUR ET SERVICE */
+
+/* SECTION PRIX */
+
+.panel {
+
+    border: 2px solid #163282;
+    transition: box-shadow 0.5s;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-footer .btn:hover {
+    border: 2px solid #EC008C;
+    background-color: #fff !important;
+    color: #EC008C;
+}
+.ph{
+    object-fit: contain;
+    border-bottom: 2px solid ;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.panel-footer {
+    background-color: white !important;
+}
+.panel-footer h4 {
+    color: #aaa;
+}
+.panel-footer .btn {
+    margin: 0px;
+    background-color: #EC008C;
+    color: #fff;
+}
+
+/* SECTION PRIX */
+
+
+/* SECTION EQUIPE */
+
+.img_radius{
+    border-radius: 50px 80px 80px 50px;
+    cursor: pointer;
+}
+
+/* SECTION EQUIPE */
+
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}  
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+      font-size: 150px;
+  }
+}
